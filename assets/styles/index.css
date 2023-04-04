@@ -263,6 +263,7 @@ body {
     margin-right: auto;
     justify-content: center;
     margin-top: 20px;
+    z-index: 3;
     display: flex;
 }
 
@@ -284,9 +285,21 @@ body {
     flex: none;
     order: 0;
     border: none;
+    position: relative;
+    z-index: 2;
     outline: none;
-    flex-grow: 0;
     margin: 0px 15px 0 0;
+}
+
+.btn-section1:hover {
+    transition: 0.2s;
+    filter: brightness(90%);
+    transform: scale(0.98);
+}
+
+.btn-section1:active {
+    transition: 0.2s;
+    transform: scale(0.95);
 }
 
 .a {
