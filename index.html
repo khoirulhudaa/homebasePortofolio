@@ -28,31 +28,31 @@
 <body>
     <!-- kode component navbar -->
     <section class="navbar navbar-expand-lg navbar-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" onclick="reload()"><img src="./assets/images/log2.png" alt="logo" class="mylogo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarText">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#home">Home</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#bahasa">Languages</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#produk">Products</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#projek">Projects</a>
-                </li>
-                <li class="nav-item">
-                <a class="nav-link" href="#valclass">Valclass</a>
-                </li>
-            </ul>
-            </div>
+        <ul class="mb-2 mb-lg-0">
+            <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#bahasa">Languages</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link products" href="#produk">Products</a>
+            </li>
+            <li class="nav-item projects">
+            <a class="nav-link" href="#projek">Projects</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="#valclass">Valclass</a>
+            </li>
+        </ul>
+        <!-- <div class="collapse navbar-collapse" id="navbarText">
         </div>
+        <div class="container-fluid"> -->
+            <!-- <a class="navbar-brand" onclick="reload()"><img src="./assets/images/log2.png" alt="logo" class="mylogo"></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
+        <!-- </div> -->
     </section>
     <!-- end kode component navbar -->
 
@@ -60,7 +60,7 @@
     <!-- kode component section1 -->
     <section class="section1" id="home">
         <div class="section1-left">
-            <h1>My name is <span class="titleX">Muh Khoirul Huda</span> Front end </h1>
+            <h1><span class="titleX"><span class="M">M</span>uhammad <span class="K">K</span>hoirul <span class="H">H</span>uda</span> <br> Front end </h1>
             <p>
                 Knowing the web world since the age of 16, and continues to work to 
                 create a css framework - valclass and dragme web builder
@@ -70,20 +70,40 @@
                 <a href="#produk"><button class="btn-section1 b"><img src="./assets/images/play-circle.png" alt="logo-button">Portofolio</button></a>
             </div>
         </div>
-        <div class="section1-right">
-            <img src="./assets/images/herooo.png" class="hero-img" alt="images">
-            <img src="./assets/images/Rectangle 3.png" class="hero-bg" alt="images">
-        </div>
+        <!-- <div class="section1-right"> -->
+            <!-- <img src="./assets/images/herooo.png" class="hero-img" alt="images"> -->
+            <!-- <img src="./assets/images/Rectangle 3.png" class="hero-bg" alt="images"> -->
+        <!-- </div> -->
     </section>
     <!-- end kode component section1 -->
 
+    <div class="wrap-project">
+        <div class="project-child1">
+            <div class="icon-child">
+                <img src="./assets/images/gitlab.svg" alt="icon" />
+            </div>
+            <p>Gitlab</p>
+        </div>
+        <div class="project-child2">
+            <div class="icon-child">
+                <img src="./assets/images/linkedin.svg" alt="icon" />
+            </div>
+            <p>Linkedin</p>
+        </div>
+        <div class="project-child3">
+            <div class="icon-child">
+                <img src="./assets/images/build.svg" alt="icon" />
+            </div>
+            <p>STMIK IKMI</p>
+        </div>
+    </div>
 
     <!-- kode component section2 -->
     <section class="section2" id="bahasa">
         <img src="./assets/images/squareLeft.png" alt="dekorasi" class="square">
-        <h1>There are several languages ​​or digital platforms that I can use to create a website depending on my needs</h1>
+        <h1>My Skills of languages</h1>
         <div class="wrap-section2">
-            <div class="card-section2 card1">
+            <div class="card-section2">
                 <img src="./assets/images/react.png" alt="logo" class="react">
                 <h4>React js</h4>
                 <p>
@@ -91,7 +111,7 @@
                     users based on UI components.
                 </p>
             </div>
-            <div class="card-section2">
+            <div class="card-section2 card1">
                 <img src="./assets/images/bs.svg" alt="logo">
                 <h4>Bootstrap 5</h4>
                 <p>
@@ -110,14 +130,14 @@
         </div>
         <div class="wrap-section2">
             <div class="card-section2">
-                <img src="./assets/images/js.png" alt="logo" class="react2">
-                <h4>JavaScript</h4>
+                <img src="./assets/images/ts.png" alt="logo" class="react2">
+                <h4>Typescript</h4>
                 <p>
-                    JavaScript is a high-level and dynamic programming language. 
-                    JavaScript is popular on the internet and web browsers
+                    TypeScript is one of the most widely used programming languages.
+                    This programming language was designed by Anders Hejlsberg from Microsoft.
                 </p>
             </div>
-            <div class="card-section2">
+            <div class="card-section2 card1">
                 <img src="./assets/images/redux.png" alt="logo" class="react2">
                 <h4>Redux</h4>
                 <p>
@@ -125,7 +145,7 @@
                     application state. Used with libraries like React.
                 </p>
             </div>
-            <div class="card-section2 card1">
+            <div class="card-section2">
                 <img src="./assets/images/css.png" alt="logo" class="react2">
                 <h4>HTML & CSS</h4>
                 <p>
@@ -137,179 +157,42 @@
     </section>
     <!-- end kode component section2 -->
 
-    
-    <!-- kode component section2b -->
-    <section class="section2b" id="produk">
-        <img src="./assets/images/squareLeft.png" alt="dekorasi" class="square2">
-        <img src="./assets/images/squareLeft.png" alt="dekorasi" class="squareb">
-        <h1>Some web applications that I have made alone or with contributors</h1>
-        <div class="wrap-section2b">
-            <div class="card-section2ba card1b">
-                <div class="card-top1">
-                    <img src="./assets/images/valclass.png" alt="logo" class="valll">
-                </div>
-                <div class="card-bottom">
-                    <h4>Framework valclass</h4>
-                    <p>
-                        The latest css framework that I made myself with several contributors, made using full 
-                        javascript only. Provides a variety of utility and components
-                    </p>
-                    <a href="https://valclass-css.com" target="__blank"><button class="btn-web">Visit now</button></a>
-                </div>
-            </div>
-            <div class="card-section2bc">
-                <div class="card-top3">
-                    <img src="./assets/images/Weblatter.png" alt="logo" class="latter">
-                </div>
-                <div class="card-bottom">
-                    <h4>Weblatter app</h4>
-                    <p>
-                        Weblatter is a web application that provides many letter templates for 
-                        your various needs. Permits, weddings, invitations and sick letters 
-                        are available
-                    </p>
-                    <a href="https://weblatter.vercel.app" target="__blank"><button class="btn-web">Visit now</button></a>
-                </div>
-            </div>
-            <div class="card-section2bb">
-                <div class="card-top2">
-                    <img src="./assets/images/drag.png" alt="logo" class="drag">
-                </div>
-                <div class="card-bottom">
-                    <h4>Dragme</h4>
-                    <p>
-                        Dragme is a web builder, a site to create a web quickly and easily with just a click of the existing 
-                        component menu and you can download the source code
-                    </p>
-                    <a href="https://dragme.vercel.app" target="__blank"><button class="btn-web">Visit now</button></a>
-                </div>
-            </div>
-        </div>
-        <div class="wrap-section2b fff">
-            <div class="card-section2baa card1b">
-                <div class="card-top1">
-                    <img src="./assets/images/px.png" alt="logo" class="valll">
-                </div>
-                <div class="card-bottom">
-                    <h4>Integrasi API - Pixabay</h4>
-                    <p>
-                        A series of programming language code that can help developers to 
-                        integrate data between two or more different applications at the same time
-                    </p>
-                    <a href="https://api-pixabay.vercel.app" target="__blank"><button class="btn-web">Visit now</button></a>
-                </div>
-            </div>
-            <div class="card-section2baa card1b">
-                <div class="card-top1k">
-                    <img src="./assets/images/logo1.png" alt="logo" class="valll">
-                </div>
-                <div class="card-bottom">
-                    <h4>Counseling guidance - Project PHP</h4>
-                    <p>
-                        A website that provides online and targeted counseling 
-                        services with expert counselors
-                    </p>
-                    <a href="https://pixabay-api.vercel.app" target="__blank"><button class="btn-web">Visit now</button></a>
-                </div>
-            </div>
-            <div class="card-section2baa card1b" style="opacity: 0">
-                <div class="card-top1">
-                    <img src="./assets/images/logo1.png" alt="logo" class="valll">
-                </div>
-                <div class="card-bottom">
-                    <h4>Counseling guidance - Project PHP</h4>
-                    <p>
-                        A website that provides online and targeted counseling 
-                        services with expert counselors
-                    </p>
-                    <a href="https://pixabay-api.vercel.app" target="__blank"><button class="btn-web">Visit now</button></a>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end kode component section2 -->
-
-    <!-- kode component section5 -->
-    <section class="section5">
-        <div class="wrap-section5">
-            <a href="https://ourdate.id"><button class="btn-preview">Come visit</button></a>
-            <h2>Ourdate is a digital platform for providing online marriage invitations</h2>
-            <div class="wrap-product">
-                <div class="card-prod">
-                    <img src="./assets/images/prod1.png" alt="video-img">
-                    <a href="https://undangan-platinum2.vercel.app/" target="__blank"><i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="card-prod">
-                    <img src="./assets/images/prod1b.png" alt="video-img">
-                    <a href="https://undangan-gold2.vercel.app/" target="__blank"><i class="fas fa-arrow-right"></i></a>
-                </div>
-                <div class="card-prod">
-                    <img src="./assets/images/prod1c.png" alt="video-img">
-                    <a href="https://ourdate.id/gold1/" target="__blank"><i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <small>
-                There are several examples of online wedding invitation letters with various types of packages from ourdate that you can check now
-            </small>
-        </div>
-    </section>
-    <!-- end kode component section5 -->
-
-    <!-- kode komponent section 7 -->
-    <section class="section7" id="valclass">
-        <img src="./assets/images/segitiga.png" alt="dekorasi" class="dek7">
-        <div class="section7-right">
-            <img src="./assets/images/valclass-tem.png" alt="card" lazy="loading">
-        </div>
-        <div class="section7-left">
-            <h2>I have successfully created a website with my own css framework</h2>
-            <p> 
-                The css framework - valclass was made by me and some of the contributors 
-                (friends) this css framework was built completely with javascript aka there is 
-                not a single css file used in this valclass
-            </p>
-            <div class="wrap-list">
-                <div class="wrap-list">
-                    <a href="https://foodyar-template-valclass.vercel.app/" target="__blank">
-                        <button class="btn btn-port" type="button">
-                            Foodyar<img src="./assets/images/arrow-right.png" class="icon">
-                        </button>
-                    </a>
-                    <a href="https://asiafood-valclass.vercel.app/" target="__blank">
-                        <button class="btn btn-port" type="button">
-                            Asiafood<img src="./assets/images/arrow-right.png" class="icon">
-                        </button>
-                    </a>
-                    <a href="https://otopet-valclass.vercel.app/" target="__blank">
-                        <button class="btn btn-port" type="button">
-                            Otopet <img src="./assets/images/arrow-right.png" class="icon">
-                        </button>
-                    </a>
-                </div>
-                <!-- <a href=""><img src="./assets/images/close.png" alt="icon"> Foodyar - culinary website</span></a>
-                <a href="https://asiafood-valclass.vercel.app/"><img src="./assets/images/check.png" alt="icon"> Asiafood - culinary website</span></a>
-               <a href="https://otopet-valclass.vercel.app/"><img src="./assets/images/check.png" alt="icon"> Website Otopet - DPR Papua</a>
-               <a href="https://seleku-valclass.vercel.app/"><span><img src="./assets/images/check.png" alt="icon"> Seleku - JS Framework</span></a> -->
-            </div>
-        </div>
-    </section>
-    <!-- End kode komponent section 7 -->
-    
-    
     <!-- kode component section5 -->
     <section class="section5-sertif pdt">
         <div class="wrap-section5-sertif">
-            <!-- <a href="https://ourdate.id"><button class="btn-preview">Come visit</button></a> -->
-            <h2>Certificate obtained after participating in a web design competition</h2>
-            <div class="wrap-product">
-                <div class="card-prod">
-                    <img src="./assets/images/wdc_pnb_2020.png" alt="video-img">
-                    <a href="https://www.instagram.com/pnbwdc/?hl=id" target="__blank"><i class="fas fa-arrow-right"></i></a>
-                </div>
+            <div class="certif-child certif-child2">
+                <a href="https://class.buildwithangga.com/talent/huda777/build-modern-iosandroid-with-react-native" target="_blank">
+                    <div class="kredensial">
+                        <small>Tampilkan kredensial</small>
+                        <img src="./assets/images/link.svg" alt="icon-link">
+                    </div>
+                </a>
+                <h2>BWA - Slicing design with React native</h2>
+                <p>Slicing design aplikasi mobile menggunakan react native bersama <b>Prawito hudoro</b></p>
+                <img src="./assets/images/bwa.png" alt="img-certificate" class="img-certif" aria-colspan="img2-child" />
             </div>
-            <!-- <small>
-                There are several examples of online wedding invitation letters with various types of packages from ourdate that you can check now
-            </small> -->
+            <div class="certif-child certif-child1">
+                <a href="https://drive.google.com/file/d/1_Z1qAub-htDCn941N2Bdf1PWvr7rJDnE/view?usp=sharing" target="_blank">
+                    <div class="kredensial">
+                        <small>Tampilkan kredensial</small>
+                        <img src="./assets/images/link.svg" alt="icon-link">
+                    </div>
+                </a>
+                <h2>BNSP - Junior Web Developer</h2>
+                <p>Pelatihan uji kompetensi/sertifikasi keprofesian bertaraf nasional bersama <b>Digitalent - Kominfo</b></p>
+                <img src="./assets/images/bnsp.png" alt="img-certificate" class="img-certif" aria-colspan="img1-child" />
+            </div>
+            <div class="certif-child certif-child3">
+                <a href="https://drive.google.com/file/d/1Yglg4WfK2BmNertOwOGQusy-lE4twatc/view?usp=sharing" target="_blank">
+                    <div class="kredensial">
+                        <small>Tampilkan kredensial</small>
+                        <img src="./assets/images/link.svg" alt="icon-link">
+                    </div>
+                </a>
+                <h2>WDC - Web design competition</h2>
+                <p>Perlombaan slicing design yang di selenggarakan oleh <b>Politeknik Negeri Bali</b></p>
+                <img src="./assets/images/wdc_pnb_2020.png" alt="img-certificate" class="img-certif" aria-colspan="img3-child" />
+            </div>
         </div>
     </section>
     <!-- end kode component section5 -->
@@ -318,16 +201,25 @@
     <!-- kode komponent section 8 -->
     <section class="section8">
         <button class="btn-downloads">PORTOFOLIO</button>
-        <h2>A collection of websites with my own designs</h2>
+        <h2>Css framework based on utilties and components</h2>
         <p>
-            I sometimes often create my own web designs according to my 
-            imagination and taste until I collect some of the websites that I 
-            build with HTML, CSS and Javascript
+            The idea of ​​creating a framework started with curiosity about tailwindcss. 
+            I have a target to remove long css code from my project code.
         </p>
+        <a href="https://valclassui-v1.vercel.app/index.html" target="__blank">
+            <div class="done-v">
+                <img src="./assets/images/arrow-right.png" alt="arrow">
+            </div>
+        </a>
+        
         <section class="portofolio" id="porto">
             <div class="wrap-portofolio">
                 <div class="co-wrap-portofolio">
-                    <a target="__blank" href="https://valclass-css.com">
+                   <!-- <img src="./assets/images/custom.svg" alt="valclass-logo bt ahmad zaiturofiq" /> -->
+                   <img src="./assets/images/maker.svg" alt="valclass-logo bt ahmad zaiturofiq" class="vv vv1" />
+                   <img src="./assets/images/fitur.svg" alt="valclass-logo bt ahmad zaiturofiq" class="vv vv2" />
+                   <img src="./assets/images/utils.svg" alt="valclass-logo bt ahmad zaiturofiq" class="vv vv3" />
+                    <!-- <a target="__blank" href="https://valclass-css.com">
                     <div class="card-portofolio">
                         <div class="title1">Framework css</div>
                         <i class="fas fa-arrow-right"></i>
@@ -354,7 +246,7 @@
                         <i class="fas fa-arrow-right"></i>
                         <img src="./assets/images/Group 1.svg" alt="img-portofolio">
                     </div>
-                    </a>
+                    </a> -->
                 </div>
             </div>
         </section>

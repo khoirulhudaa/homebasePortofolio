@@ -6,7 +6,11 @@
     --bluePrimary: rgba(59, 130, 246, 1);
     --bgColor: linear-gradient(180deg, #E4EFFF 0%, rgba(228, 239, 255, 0.6) 92.51%, rgba(228, 239, 255, 0) 100%);
     --blueDark: rgba(25, 55, 102, 1);
-    --blueYoung: rgba(29, 161, 242, 1);
+    --blueDarkSoft: rgb(63, 110, 187);
+    --blueDark1: rgb(45, 126, 255);
+    --blueDark2: rgb(93, 155, 255);
+    --blueDark3: rgb(146, 186, 255);
+    --blueYoung: hsl(203, 100%, 82%);
     --blueLight: #C6DBFF;
     --paragraph: #697B98;
 }
@@ -57,16 +61,21 @@ body {
 /* kode component navbar */
 
 .navbar {
-    position: absolute;
-    top: 0;
+    position: sticky;
+    top: 20px;
     z-index: 55;
-    left: 0;
-    width: 100vw;
+    height: max-content;
+    box-shadow:
+  10px 43px 80px rgba(0, 0, 0, 0.12)
+;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 24px;
+    width: 80vw;
+    background-color: white;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
-    padding: 20px 80px 0 40px;
 }
 
 .navbar-brand img {
@@ -78,10 +87,27 @@ body {
 
 .navbar-collapse {
     margin-left: 80px;
+    width: 100%;
 }
 
-.navbar-collapse ul li {
-    margin-right: 40px;
+.container-fluid {
+    margin-left: auto;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+}
+
+.navbar ul li {
+    margin-right: 30px;
+    margin-left: 30px;
+    list-style: none;
+    color: black;
+}
+
+.navbar a {
+    color: black;
 }
 
 .active {
@@ -117,18 +143,43 @@ body {
     position: relative;
     background: #E5F0FF;
     width: 100vw;
-    height: 100vh;
+    /* height: 80vh; */
     display: flex;
-    padding: 0 40px;
-    z-index: 3  ;
-    padding-top: 240px;
+    z-index: 3;
+    padding-top: 140px;
+}
+
+.wrap-project {
+    display: flex;
+    width: 100vw;
+    margin-top: 80px;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 100px;
+    height: 80px;
+}
+
+.project-child1, .project-child3 {
+    width: 33%;
+    height: 100%;
+    background-color: rgb(164, 193, 255);
+}
+
+.project-child2 {
+    height: 100%;
+    width: 33%;
+    background-color: var(--blueLight);
 }
 
 .section1-left {
-    width: 50%;
+    width: 100%;
     height: 100%;
     flex-direction: column;
     display: flex;
+    text-align: center;
     margin-left: -12px;
     justify-content: center;
     background: var(--bgColor);
@@ -142,6 +193,46 @@ body {
     top: -35px;
     margin-left: auto;
     margin-right: auto;
+}
+
+.M, .K, .H {
+    position: relative;
+}
+
+.M::before {
+    position: absolute;
+    content: '';
+    left: -2px;
+    bottom: 20px;
+    background-color: var(--blueDarkSoft);
+    opacity: 0.4;
+    width: 105%;
+    height: 32%;
+    display: block;    
+}
+
+.K::before {
+    position: absolute;
+    content: '';
+    left: -2px;
+    bottom: 20px;
+    background-color: var(--blueDarkSoft);
+    opacity: 0.4;
+    width: 105%;
+    height: 32%;
+    display: block;
+}
+
+.H::before {
+    position: absolute;
+    content: '';
+    left: -2px;
+    bottom: 20px;
+    background-color: var(--blueDarkSoft);
+    opacity: 0.4;
+    width: 105%;
+    height: 32%;
+    display: block;    
 }
 
 .section1-left p {
@@ -167,10 +258,10 @@ body {
 }
 
 .wrap-button {
-    width: max-content;
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
+    justify-content: center;
     margin-top: 20px;
     display: flex;
 }
@@ -239,10 +330,10 @@ body {
 .section2 {
     position: relative;
     width: 100vw;
-    padding-top: 240px;
+    padding-top: 80px;
     height: max-content;
     display: flex;
-    padding-bottom: 100px;
+    padding-bottom: 20px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -301,7 +392,7 @@ body {
 }
 
 .card-section2 .react2 {
-    width: 55px;
+    width: 50px;
 }
 
 .card-section2 .wp {
@@ -776,7 +867,6 @@ body {
     display: flex;
     flex-direction: column;
     padding-bottom: 30px;
-    text-align: center;
     height: max-content;
     background-color: var(--blueDark);
     -webkit-clip-path: polygon(0 2%, 100% 0%, 100% 99%, 0% 100%);
@@ -786,13 +876,103 @@ body {
 .wrap-section5-sertif {
     width: 100vw;
     display: flex;
-    flex-direction: column;
-    padding-bottom: 30px;
     text-align: center;
-    height: max-content;
+    height: 700px;
     background-color: var(--blueDark);
-    -webkit-clip-path: polygon(0 2%, 100% 0%, 100% 99%, 0% 100%);
-    clip-path: polygon(0 2%, 100% 0%, 100% 99%, 0% 100%);
+    /* -webkit-clip-path: polygon(0 2%, 100% 0%, 100% 99%, 0% 100%); */
+    /* clip-path: polygon(0 2%, 100% 0%, 100% 99%, 0% 100%); */
+}
+
+.certif-child {
+    width: 33.3%; 
+    height: 100%;
+    padding: 10px 36px;
+    box-sizing: border-box;
+    text-align: left;
+    overflow: hidden;
+    color: white;
+}
+
+.kredensial {
+    position: relative;
+    top: 60px;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 12px;
+    padding-right: 12px;
+    align-items: center;
+    width: max-content;
+    height: 42px;
+    border: 1px solid white;
+    border-radius: 100px;
+    cursor: pointer;
+    /* background-color: white; */
+    color: white;
+    transition: 0.2s;
+}
+
+.kredensial:hover {
+    filter: brightness(90%);
+    transform: scale(0.98);
+    transition: 0.2s;
+}
+
+.certif-child:hover img {
+    transition: 0.3s;
+    transform: scale(1.45);
+    opacity: 1;
+}
+
+.certif-child img {
+    transition: 0.3s;
+}
+
+.kredensial small {
+    width: max-content;
+    margin-right: 20px;    
+    display: flex;
+}
+
+.kredensial img {
+    height: 16px;
+    padding: 2px;
+    background-color: white;
+    border-radius: 100px;
+    width: 22px;
+    top: 4px;
+    position: relative;
+}
+
+.certif-child1 .img-certif {
+    top: 84px;
+    right: -100px;
+    transform: rotate(30deg);
+    width: 86%;
+    filter: brightness(94%);
+    position: relative;
+    opacity: 1;
+}
+
+.certif-child2 .img-certif, .certif-child3 .img-certif {
+    top: 84px;
+    right: -100px;
+    transform: rotate(30deg);
+    width: 86%;
+    filter: brightness(94%);
+    position: relative;
+    opacity: 0.5;
+}
+
+.certif-child1 {
+    background-color: var(--blueDark);
+}
+
+.certif-child2 {
+    background-color: var(--blueDark2);
+}
+
+.certif-child3 {
+    background-color: var(--blueDark3);
 }
 
 .wrap-section5 h2 {
@@ -810,16 +990,12 @@ body {
 }
 
 .wrap-section5-sertif h2 {
-    width: 70vw;
     font-style: normal;
     font-weight: 500;
-    margin-left: auto;
-    margin-right: auto;
     margin-top: 110px;
     margin-bottom: 30px;
     font-size: 32px;
     line-height: 44px;
-    text-align: center;
     color: #FFFFFF;
 }
 
@@ -860,9 +1036,6 @@ body {
 }
 
 .section5-sertif img {
-    margin-left: auto;
-    margin-right: auto;
-    width: 100%;
     margin-top: 0px;
     margin-bottom: 10px;
     border-radius: 13px;
@@ -918,6 +1091,40 @@ body {
     line-height: 44px;
     width: 80%;
     color: #193766;
+}
+
+.icon-child {
+    width: 19%;
+    margin-left: 0px;
+    /* border-radius: 10px; */
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+}
+
+.project-child1, .project-child2, .project-child3 {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.project-child1:hover, .project-child2:hover, .project-child3:hover {
+    transition: 0.2s;
+    background-color: var(--blueDark);
+    color: white;
+}
+
+.project-child1 img, .project-child2 img, .project-child3 img {
+    width: 20px;
+}
+
+.wrap-project p {
+    margin-left: 20px;
+    position: relative;
+    top: 8px;
 }
 
 .section6-left p {
@@ -1358,11 +1565,12 @@ body {
     display: flex;
     position: relative;
     width: 100vw;
+    overflow: hidden;
     justify-content: center;
     align-items: center;
+    height: max-content;
     margin-left: auto;
     margin-right: auto;
-    animation: 7s df ease-out infinite;
 }
 
 .card-portofolio .title1, .title2, .title3, .title4, .title5 {
@@ -1382,6 +1590,10 @@ body {
     justify-content: center;
     width: 100%;
     text-align: center;
+}
+
+.co-wrap-portofolio img {
+    width: 33%;
 }
 
 .co-wrap-portofolio .title1 {
@@ -1424,6 +1636,34 @@ body {
     transition: 0.4s;
 }
 
+.done-v {
+    border-radius: 993px;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    left: 47.7%;
+    justify-content: center;
+    cursor: pointer;
+    text-align: center;
+    background-color: white;
+    height: 60px;
+    margin-top: 20px;
+    position: absolute;
+    transition: 0.2s;
+    z-index: 2;
+}
+
+.done-v img {
+    width: 60%;
+}
+
+.done-v:hover {
+    z-index: 2;
+    transform: scale(0.95);
+    filter: brightness(90%);
+    transition: 0.2s;
+}
+
 .card-portofolio:hover i {
     opacity: 1;
     transition: 0.5s;
@@ -1434,6 +1674,26 @@ body {
     filter: brightness(70%);
 }
 
+.vv {
+    transform: scale(0.7);
+}
+
+.vv1 {
+    position: relative;
+    bottom: 50px;
+    left: 50px;
+}
+
+.vv2 {
+    position: relative;
+    top: 40px;
+}
+
+.vv3 {
+    position: relative;
+    bottom: 50px;
+    right: 50px;
+}
 
 /* kode footer */
 
@@ -1441,11 +1701,11 @@ footer {
     position: relative;
     width: 100vw;
     display: flex;
-    margin-top: 70px;
+    margin-top: 0px;
     flex-direction: column;
     background-color: var(--blueDark);
-    -webkit-clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
-    clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
+    /* -webkit-clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%);
+    clip-path: polygon(0 5%, 100% 0%, 100% 100%, 0% 100%); */
     height: 400px;
     align-items: center;
 }

@@ -34,15 +34,58 @@
 
     .navbar {
         position: fixed;
-        top: 0;
+        top: 0px;
         z-index: 55;
-        left: 0;
         width: 100vw;
+        margin-left: auto;
+        margin-right: auto;
         display: flex;
+        border-radius: 0;
         justify-content: center;
         align-items: center;
         background-color: white;
-        padding: 7px 10px 7px 10px;
+        padding: 7px 10px 1px 10px;
+    }
+
+    .navbar {
+        padding-left: 0;
+        padding-right: 0;
+    }
+    
+    .navbar ul {
+        margin-left: 0;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .wrap-project {
+        margin-top: 40px;
+    }
+
+    .wrap-project p {
+        display: none;
+    }
+
+    .wrap-project .icon-child {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .navbar ul li {
+        margin-right: 2px;
+        margin-left: 4px;
+        list-style: none;
+        color: black;
+        font-size: 14px;
+    }
+
+    .products, .projects {
+        display: none;
+    }
+
+    .navbar ul {
+        display: flex;
     }
 
     .navbar-brand img {
@@ -231,7 +274,7 @@
         padding-top: 30px;
         height: max-content;
         display: flex;
-        padding-bottom: 100px;
+        padding-bottom: 0px;
         flex-direction: column;
         justify-content: center;
         align-items: center;
@@ -270,7 +313,7 @@
     .card-section2 {
         position: relative;
         width: 90%;
-        height: 320px;
+        min-height: 320px;
         background-color: var(--blueDark);
         color: white;
         border-radius: 10px;
@@ -732,8 +775,18 @@
         color: #FFFFFF;
     }
 
+    .wrap-section5-sertif {
+        flex-direction: column;
+        height: max-content;
+    }
+
+    .certif-child  {
+        width: 100%;
+        min-height: 520px;
+    }
+
     .wrap-section5-sertif h2 {
-        width: 98vw;
+        width: 88vw;
         font-style: normal;
         font-weight: 500;
         margin-left: auto;
@@ -742,22 +795,52 @@
         margin-bottom: 30px;
         font-size: 21px;
         line-height: 1.4em;
-        text-align: center;
+        text-align: left;
         color: #FFFFFF;
     }
 
-    .wrap-section5 small {
+    .wrap-section5 p {
         font-style: normal;
         font-weight: 500;
         font-size: 16px;
         margin-left: auto;
-        width: 90vw;
+        width: 96vw;
         margin-right: auto;
         line-height: 1.4em;
         margin-bottom: 60px;
         margin-top: -20px;
         text-align: center;
         color: rgba(255, 255, 255, 0.8);
+    }
+
+    .kredensial {
+        position: relative;
+        top: 60px;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 12px;
+        padding-right: 12px;
+        align-items: center;
+        width: 80%;
+        height: 42px;
+        border: 1px solid white;
+        border-radius: 100px;
+        cursor: pointer;
+        /* background-color: white; */
+        color: white;
+        transition: 0.2s;
+    }
+    
+    .kredensial:hover {
+        filter: brightness(90%);
+        transform: scale(0.98);
+        transition: 0.2s;
+    }
+    
+    .certif-child:hover img {
+        transition: 0.3s;
+        transform: scale(1.45);
+        opacity: 1;
     }
 
     .btn-preview {
@@ -775,6 +858,10 @@
         border-radius: 100px;
     }
 
+    .done-v {
+        left: 40%;
+    }
+
     .section5 img {
         margin-left: auto;
         margin-right: auto;
@@ -786,7 +873,7 @@
     .section5-sertif img {
         margin-left: auto;
         margin-right: auto;
-        width: 90vw ;
+        width: 30px;
         margin-top: 0px;
         margin-bottom: 10px;
         border-radius: 13px;
@@ -1079,7 +1166,9 @@
     }
 
     .section8 h2 {
-        display: none;
+        font-size: 24px;
+        width: 80vw;
+        line-height: 1.4em;
     }
 
     .section8 p {
@@ -1133,7 +1222,7 @@
 
     .portofolio {
         display: flex;
-        flex-direction: column;
+        /* flex-direction: column; */
         margin-top: 30px;
     }
 
@@ -1189,11 +1278,61 @@
     .co-wrap-portofolio {
         display: flex;
         position: relative;
+        width: 100vw;
+        /* overflow: hidden; */
+        justify-content: center;
+        align-items: center;
+        height: max-content;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    .co-wrap-portofolio img {
+        width: 80%;
+        margin-top: 60px;
+        margin-bottom: 120px;
+    }
+        
+    .vv {
+        transform: scale(1);
+        left: 0;
+    }
+
+    .vv1 {
+        position: relative;
+        bottom: 50px;
+        left: 0px;
+        display: none;
+    }
+
+    .vv2 {
+        position: relative;
+        top: 40px;
+    }
+
+    .vv3 {
+        position: relative;
+        bottom: 50px;
+        right: 50px;
+        display: none;
+    }
+
+    .wrap-portofolio {
+        display: flex;
+        overflow-x: scroll;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .co-wrap-portofolio {
+        display: flex;
+        position: relative;
         left: 0px;
         justify-content: center;
-        flex-direction: column;
-        width: max-content;
-        animation: none;
+        /* flex-direction: column; */
+        /* width: max-content; */
+        /* animation: none; */
     }
 
     .card-portofolio .title1, .title2, .title3, .title4, .title5 {
@@ -1273,7 +1412,7 @@
         position: relative;
         width: 100vw;
         display: flex;
-        margin-top: 70px;
+        margin-top: 0px;
         flex-direction: column;
         background-color: var(--blueDark);
         -webkit-clip-path: polygon(0 1%, 100% 0%, 100% 100%, 0% 100%);
