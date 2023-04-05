@@ -333,12 +333,24 @@
         width: 48px;
     }
 
+    .card-section2b .react {
+        width: 99px;
+        left: 0;
+        top: 0px;
+        position: absolute;
+    }
+
     .card-section2 .wp {
         width: 48px;
     }
 
     .card-section2 h4 {
         font-weight: bold;
+    }
+
+    .card-section2b.cardddd h4 {
+        font-weight: bold;
+        margin-top: 65px;
     }
 
     .card-section2 p {
@@ -364,10 +376,11 @@
         padding-top: 50px;
         height: max-content;
         display: flex;
+        align-items: center;
         padding-bottom: 0px;
         margin-bottom: 35px;
         flex-direction: column;
-        margin-top: -94px;
+        margin-top: 4px;
         justify-content: center;
         align-items: center;
         background-color: #E5F0FF;
@@ -389,11 +402,11 @@
     }
 
     .section2b h1 {
-        font-style: normal;
+        font-style: bold;
+        text-align: center;
         font-weight: 500;
-        font-size: 20px;
+        font-size: 24px;
         line-height: 1.4em;
-        text-align: left;
         width: 90%;
         color: #193766;
     }
@@ -402,13 +415,32 @@
         line-height: 1.8em;
     }
 
-    .wrap-section2b {
-        width: 100vw;
+    .wrapper-section2b {
         display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-top: 20px;
         flex-direction: column;
+        align-items: center;
+        width: 94vw;
+        margin-top: -10px;
+        /* align-items: center;/ */
+    }
+    
+    .wrap-section2b {
+        width: 50vw;
+        padding: 12px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        /* align-items: center; */
+        margin-top: 0px;
+    }
+
+    .card-section2b {
+        position: relative;
+        width: 90vw;
+        height: max-content;
+        border-radius: 10px;
+        margin: 14px;
+        /* box-shadow: 0px 30px 60px rgba(59, 130, 246, 0.25); */
     }
 
     .card-section2bb {
@@ -534,6 +566,11 @@
 
     .card-section2b .reactb {
         width: 48px;
+    }
+
+    .card-section2b .react2 {
+        width: 128px;
+        margin-bottom: 20px;
     }
 
     .card-section2b .wpb {
@@ -786,8 +823,28 @@
         min-height: 520px;
     }
 
+    .certif-child1 .img-certif {
+        top: 20px;
+        left: 0px;
+        transform: rotate(0deg);
+        width: 75%;
+        filter: brightness(94%);
+        position: relative;
+        opacity: 1;
+    }
+    
+    .certif-child2 .img-certif, .certif-child3 .img-certif {
+        top: 20px;
+        left: 0px;
+        transform: rotate(0deg);
+        width: 75%;
+        filter: brightness(94%);
+        position: relative;
+        opacity: 1;
+    }
+
     .wrap-section5-sertif h2 {
-        width: 88vw;
+        width: 80vw;
         font-style: normal;
         font-weight: 500;
         margin-left: auto;
