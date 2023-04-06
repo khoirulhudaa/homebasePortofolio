@@ -1008,7 +1008,7 @@ body {
     right: 22px;
     display: none;
     background-color: #E5F0FF;
-    display: flex;
+    display: none;
     justify-content: space-between;
     padding-left: 12px;
     padding-right: 12px;
