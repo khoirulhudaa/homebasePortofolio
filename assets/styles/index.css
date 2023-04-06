@@ -977,6 +977,57 @@ body {
     color: white;
 }
 
+.kredensial2b {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    background-color: #E5F0FF;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 12px;
+    padding-right: 12px;
+    align-items: center;
+    width: max-content;
+    height: 42px;
+    border: 1px solid black;
+    border-radius: 100px;
+    cursor: pointer;
+    color: black;
+    transition: 0.2s;
+}
+
+.kredensial2b:hover {
+    filter: brightness(90%);
+    transform: scale(0.98);
+    transition: 0.2s;
+}
+
+.kredensial2bb {
+    position: absolute;
+    top: 22px;
+    right: 22px;
+    display: none;
+    background-color: #E5F0FF;
+    display: flex;
+    justify-content: space-between;
+    padding-left: 12px;
+    padding-right: 12px;
+    align-items: center;
+    width: max-content;
+    height: 42px;
+    border: 1px solid black;
+    border-radius: 100px;
+    cursor: pointer;
+    color: black;
+    transition: 0.2s;
+}
+
+.kredensial2bb:hover {
+    filter: brightness(90%);
+    transform: scale(0.98);
+    transition: 0.2s;
+}
+
 .kredensial {
     position: relative;
     top: 60px;
@@ -1011,6 +1062,21 @@ body {
     transition: 0.3s;
 }
 
+.kredensial2b small {
+    width: max-content;
+    margin-right: 20px;    
+    display: flex;
+}
+
+.kredensial2b img {
+    height: 16px;
+    padding: 2px;
+    border-radius: 100px;
+    width: 22px;
+    top: 10px;
+    position: relative;
+}
+
 .kredensial small {
     width: max-content;
     margin-right: 20px;    
@@ -1040,6 +1106,36 @@ body {
 .card-section2b .react2 {
     width: 128px;
     margin-bottom: 20px;
+}
+
+.dragme {
+    background-color: rgb(255, 225, 230);
+    transition: 0.1s;
+}
+
+.dragme:Hover {
+    transition: 0.1s;
+    transform: scale(0.97);
+}
+
+.pixabay {
+    background-color: rgb(232, 253, 199);
+    transition: 0.1s;
+}
+
+.pixabay:Hover {
+    transition: 0.1s;
+    transform: scale(0.97);
+}
+
+.weblatter {
+    background-color: rgb(201, 201, 255);
+    transition: 0.1s;
+}
+
+.weblatter:Hover {
+    transition: 0.1s;
+    transform: scale(0.97);
 }
 
 .card-section2b .react {
@@ -1618,7 +1714,7 @@ body {
 
 .wrap-portofolio {
     display: flex;
-    overflow-x: scroll;
+    /* overflow-x: scroll; */
     width: 100vw;
     justify-content: center;
     align-items: center;
@@ -1666,7 +1762,7 @@ body {
     display: flex;
     position: relative;
     width: 100vw;
-    overflow: hidden;
+    /* overflow: hidden; */
     justify-content: center;
     align-items: center;
     height: max-content;
@@ -1783,17 +1879,77 @@ body {
     position: relative;
     bottom: 50px;
     left: 50px;
+    box-shadow:
+        4.5px 4.5px 3.6px rgba(0, 0, 0, 0.01),
+        12.5px 12.5px 10px rgba(0, 0, 0, 0.015),
+        30.1px 30.1px 24.1px rgba(0, 0, 0, 0.02),
+        100px 100px 80px rgba(0, 0, 0, 0.03)
+        ;
+    animation: vv1 3s infinite linear;
 }
 
 .vv2 {
     position: relative;
     top: 40px;
+    animation: vv2 4s infinite linear;
 }
 
 .vv3 {
     position: relative;
     bottom: 50px;
     right: 50px;
+    box-shadow:
+    4.5px 4.5px 3.6px rgba(0, 0, 0, 0.01),
+    12.5px 12.5px 10px rgba(0, 0, 0, 0.015),
+    30.1px 30.1px 24.1px rgba(0, 0, 0, 0.02),
+    100px 100px 80px rgba(0, 0, 0, 0.03)
+    ;
+    animation: vv3 5s infinite linear;
+}
+
+@keyframes vv1 {
+    0% {
+        position: relative;
+        bottom: 50px;
+    }
+    33% {
+        position: relative;
+        bottom: 80px;
+    }
+    100% {
+        position: relative;
+        bottom: 50px;
+    }
+}
+
+@keyframes vv2 {
+    0% {
+        position: relative;
+        bottom: 50px;
+    }
+    33% {
+        position: relative;
+        bottom: 80px;
+    }
+    100% {
+        position: relative;
+        bottom: 50px;
+    }
+}
+
+@keyframes vv3 {
+    0% {
+        position: relative;
+        bottom: 50px;
+    }
+    33% {
+        position: relative;
+        bottom: 80px;
+    }
+    100% {
+        position: relative;
+        bottom: 50px;
+    }
 }
 
 /* kode footer */

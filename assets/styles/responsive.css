@@ -333,6 +333,51 @@
         width: 48px;
     }
 
+    .kredensial2b {
+        display: none;
+    }
+
+    .kredensial2bb {
+        position: relative;
+        top: 1px;
+        left: 0px;
+        display: inline;
+        background-color: #E5F0FF;
+        display: flex;
+        justify-content: space-between;
+        padding-left: 12px;
+        padding-right: 12px;
+        align-items: center;
+        width: max-content;
+        height: 42px;
+        border: 1px solid black;
+        border-radius: 100px;
+        cursor: pointer;
+        color: black;
+        transition: 0.2s;
+    }
+
+    .kredensial2bb:hover {
+        filter: brightness(90%);
+        transform: scale(0.98);
+        transition: 0.2s;
+    }
+
+    .kredensial2bb small {
+        width: max-content;
+        margin-right: 20px;    
+        display: flex;
+    }
+    
+    .kredensial2bb img {
+        height: 16px;
+        padding: 2px;
+        border-radius: 100px;
+        width: 22px;
+        top: 10px;
+        position: relative;
+    }
+
     .card-section2b .react {
         width: 99px;
         left: 0;
@@ -824,23 +869,23 @@
     }
 
     .certif-child1 .img-certif {
-        top: 20px;
+        top: 40px;
         left: 0px;
         transform: rotate(0deg);
-        width: 75%;
+        width: 55%;
         filter: brightness(94%);
-        position: relative;
         opacity: 1;
+        position: relative;
     }
     
     .certif-child2 .img-certif, .certif-child3 .img-certif {
-        top: 20px;
+        top: 40px;
         left: 0px;
         transform: rotate(0deg);
-        width: 75%;
+        width: 55%;
         filter: brightness(94%);
-        position: relative;
         opacity: 1;
+        position: relative;
     }
 
     .wrap-section5-sertif h2 {
@@ -873,7 +918,7 @@
 
     .kredensial {
         position: relative;
-        top: 60px;
+        top: 35px;
         display: flex;
         justify-content: space-between;
         padding-left: 12px;
