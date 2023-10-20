@@ -1,11 +1,28 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <!-- Meta -->
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- End Meta -->
+        <title>BuatWebSendiri</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="https://buatwebsendiri.vercel.app/index.html">
+        <meta property="twitter:domain" content="buatwebsendiri.vercel.app">
+        <meta property="twitter:url" content="https://buatwebsendiri.vercel.app/index.html">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta name="twitter:image" content="https://raw.githubusercontent.com/khoirulhudaa/buatwebsendiri/main/assets/images/log2.png">
+
+        <!-- Facebook Meta Tags -->
+        
+        <!-- Twitter Meta Tags -->
+        <meta name="description" content="Jasa pembuatan website profesional dengan harga terjangkau dan kualitas tinggi. Dapatkan situs web yang sesuai dengan kebutuhan tugas dan bisnis Anda.">
+        <meta property="og:title" content="Jasa Pembuatan Website Terjangkau dan Berkualitas - BuatWebSendiri">
+        <meta property="og:description" content="BuatWebSendiri adalah mitra terpercaya dalam mengembangkan situs web bisnis Anda. Kami menawarkan layanan pembuatan website dengan harga terjangkau dan kualitas terbaik.">
+        <meta property="og:image" content="https://raw.githubusercontent.com/khoirulhudaa/buatwebsendiri/main/assets/images/log2.png">
+        <meta name="twitter:title" content="Jasa Pembuatan Website Terjangkau dan Berkualitas - BuatWebSendiri">
+        <meta name="twitter:description" content="BuatWebSendiri adalah solusi terbaik untuk mendapatkan situs web profesional dengan harga yang sesuai anggaran Anda.">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+        <!-- Meta Tags Generated via https://www.opengraph.xyz -->
+        <link rel="icon" href="./assets/images/favicon/favicon.ico" type="image/x-icon"> 
 
         
         <!-- aos -->
@@ -42,11 +59,14 @@
         <!-- End Title -->
     </head>
     <body>
-        <!-- kode component navbar -->
-        <section class="navbar navbar-expand-lg navbar-light" data-aos="fade-up">
+
+        <div class="sidebar" id="sidebare">
+            <div class="btn-closed" id="btn-closed">
+                <i class="fas fa-times"></i>
+            </div>
             <ul class="mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#home"
+                    <a class="nav-link" aria-current="page" href="#home"
                         >Home</a
                     >
                 </li>
@@ -54,55 +74,71 @@
                     <a class="nav-link" href="#bahasa">Languages</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link products" href="#produk">Products</a>
+                    <a class="nav-link" href="#dashboard">Admin Dashboard</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#project">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#product">Products</a>
+                </li>
+            </ul>
+        </div>
+
+        <!-- kode component navbar -->
+        <section class="navbar navbar-expand-lg navbar-light" data-aos="fade-up">
+            <a class="navbar-brand2" onclick="reload()">🇮🇩</a>
+            </div>
+            <ul class="mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="#home"
+                        >Home</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#bahasa">Languages</a>
                 </li>
                 <li class="nav-item projects">
-                    <a class="nav-link" href="#projek">Projects</a>
+                    <a class="nav-link" href="#dashboard">Admin Dashboard</a>
                 </li>
-                <!-- <li class="nav-item">
-                    <a class="nav-link" href="#valclass">Valclass</a>
-                </li> -->
+                <li class="nav-item">
+                    <a class="nav-link products" href="#project">Projects</a>
+                </li>
+                <li class="nav-item projects">
+                    <a class="nav-link" href="#product">Products</a>
+                </li>
             </ul>
             <!-- <div class="collapse navbar-collapse" id="navbarText">
         </div>
         <div class="container-fluid"> -->
-            <!-- <a class="navbar-brand" onclick="reload()"><img src="./assets/images/log2.png" alt="logo" class="mylogo"></a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button> -->
-            <!-- </div> -->
+            <a class="navbar-brand" onclick="reload()"><img src="./assets/images/log2.png" alt="logo" class="mylogo"></a>
+                <button class="btn-toggle" id="btn-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
         </section>
         <!-- end kode component navbar -->
 
         <!-- kode component section1 -->
         <section class="section1" id="home">
+            <img src="./assets/images/square.svg" alt="square" class="square">
             <div class="section1-left">
-                <h1 data-aos="fade-up">
-                    <span class="titleX"
-                        ><span class="M">M</span>uhammad
-                        <span class="K">K</span>hoirul
-                        <span class="H">H</span>uda</span
-                    >
-                    <br />
-                    Front end
+                <h1 class="title-hero-bmw" data-aos="fade-up">
+                    Muhammad Khoirulhuda,
+                    <span class="M">
+                        Programmer,
+                    </span>
+                    Frontend Dev<img src="./assets/images/code.png" alt="code" class="code" />
                 </h1>
-                <p6 data-aos="fade-up"  data-aos-delay="100">
-                    Knowing the web world since the age of 16, and continues to
-                    work to create a css framework - valclass and dragme web
-                    builder
-                </p6>
+                <p data-aos="fade-up" data-aos-delay="100">
+                    "Inspiring websites. Exceptional service. 
+                    We're your trusted partner in crafting a strong online presence. 
+                    With innovative design and optimized experiences.
+                </p>
                 <div class="wrap-button">
                     <a
-                        href="https://github.com/khoirulhudaa/resume/archive/refs/heads/main.zip"
-                        ><button class="btn-section1 a" data-aos="fade-up" data-aos-delay="200">
-                            <img
-                                src="./assets/images/download.png"
-                                alt="logo-button"
-                            />Resume (PDF)
-                        </button></a
-                    >
-                    <a href="https://wa.me/+6289513093406" target="_blank"
-                        ><button class="btn-section1 b" data-aos="fade-up" data-aos-delay="300">
+                        href="https://wa.me/+6289513093406" target="_blank"
+                        ><button class="btn-section1 a">
                             <i
                                 class="las la-envelope"
                                 style="
@@ -111,39 +147,53 @@
                                     position: relative;
                                     bottom: 2px;
                                 "
-                            ></i>
-                            Kirim pesan
+                            ></i>Chat now       
+                        </button></a
+                    >
+                    <a href="#project"
+                        ><button class="btn-section1 b">
+                           Projects list
                         </button></a
                     >
                 </div>
             </div>
-            <!-- <div class="section1-right"> -->
-            <!-- <img src="./assets/images/herooo.png" class="hero-img" alt="images"> -->
-            <!-- <img src="./assets/images/Rectangle 3.png" class="hero-bg" alt="images"> -->
-            <!-- </div> -->
         </section>
         <!-- end kode component section1 -->
-
-        <div class="wrap-project">
-            <div class="project-child1" data-aos="fade-up" data-aos-delay="100">
-                <div class="icon-child">
-                    <img src="./assets/images/gitlab.svg" alt="icon" />
+                
+        <section class="portofolio" id="porto">
+            <div class="wrap-portofolio">
+                <div class="co-wrap-portofolio">
+                    <a target="__blank" href="https://buatwebsendiri.vercel.app/">
+                    <div class="card-portofolio">
+                        <div class="title1">Company Profile (CV)</div>
+                        <i class="fas fa-arrow-right"></i>
+                        <img src="./assets/images/portofolio/mts.svg" alt="img-portofolio">
+                    </div>
+                    </a>
+                    <a target="__blank" href="https://wisata-portof.vercel.app/">
+                    <div class="card-portofolio">
+                        <div class="title2">Website wisata</div>
+                        <i class="fas fa-arrow-right"></i>
+                        <img src="./assets/images/portofolio/Group 5.svg" alt="img-portofolio">
+                    </div>
+                    </a>
+                    <a target="__blank" href="https://stayathome-portof.vercel.app/">
+                    <div class="card-portofolio">
+                        <div class="title3">StayAtHome</div>
+                        <i class="fas fa-arrow-right"></i>
+                        <img src="./assets/images/portofolio/Group 6.svg" alt="img-portofolio">
+                    </div>
+                    </a>
+                    <a target="__blank" href="https://blackfire.vercel.app//">
+                    <div class="card-portofolio">
+                        <div class="title5">Blackfire</div>
+                        <i class="fas fa-arrow-right"></i>
+                        <img src="./assets/images/portofolio/bf.svg" alt="img-portofolio">
+                    </div>
+                    </a>
                 </div>
-                <p>Gitlab</p>
             </div>
-            <div class="project-child2" data-aos="fade-up" data-aos-delay="200">
-                <div class="icon-child">
-                    <img src="./assets/images/linkedin.svg" alt="icon" />
-                </div>
-                <p>Linkedin</p>
-            </div>
-            <div class="project-child3" data-aos="fade-up" data-aos-delay="300">
-                <div class="icon-child">
-                    <img src="./assets/images/build.svg" alt="icon" />
-                </div>
-                <p>STMIK IKMI</p>
-            </div>
-        </div>
+        </section>
 
         <!-- kode component section2 -->
         <section class="section2" id="bahasa">
@@ -152,7 +202,7 @@
                 alt="dekorasi"
                 class="square"
             />
-            <h1 data-aos="fade-up" class="titleSkills">Tech and language mastered</h1>
+            <h1 data-aos="fade-up" class="titleSkills">Tech and language <img class="icon1" src="./assets/icons/language.png" alt="icon"/> </h1>
             <div class="wrap-section2">
                 <div class="card-section2" data-aos="fade-up" data-aos-delay="100">
                     <img
@@ -201,15 +251,15 @@
                 </div>
                 <div class="card-section2 card1" data-aos="fade-up" data-aos-delay="200">
                     <img
-                        src="./assets/images/redux.png"
+                        src="./assets/images/php.jpg"
                         alt="logo"
-                        class="react2"
+                        class="php"
                     />
-                    <h4>Redux</h4>
+                    <h4>PHP</h4>
                     <p>
-                        Redux is an open source JavaScript library for managing
-                        and centralizing application state. Used with libraries
-                        like React.
+                        Hypertext Preprocessor or simply PHP, is a general-purpose scripting 
+                        language primarily used for web development. 
+                        This language was originally created by Danish-Canadian.
                     </p>
                 </div>
                 <div class="card-section2" data-aos="fade-up" data-aos-delay="300">
@@ -226,27 +276,191 @@
                     </p>
                 </div>
             </div>
-            <div class="wrap-section2">
-                <div class="card-section2" data-aos="fade-up" data-aos-delay="400">
-                    <img src="./assets/images/docker.png" alt="logo" class="wp" />
-                    <h4>Docker</h4>
-                    <p>
-                        Docker is a set of platform as a service products that use OS-level 
-                        virtualization to deliver software in packages called containers.
-                    </p>
-                </div>
-            </div>
         </section>
         <!-- end kode component section2 -->
 
-        <!-- kode component section2                                                    -->
-        <section class="section2b" id="produk">
+        <!-- Dashboard section -->
+
+        <section class="section2b" id="dashboard">
+            <img
+                src="./assets/images/squareLeft.png"
+                alt="dekorasi"
+                class="square"
+                />
+            <h1 data-aos="fade-up">Admin dashboard</h1>
+            <div class="wrapper-section2b">
+                <div class="wrap-section2b">
+                    <div class="card-section2b weblatter" data-aos="fade-up">
+                        <h4>Dashboard</h4>
+                        <p>
+                            An admin dashboard is an interface specifically designed for use by administrators or system managers.
+                        </p>
+                        <div class="wrap-detail">
+                            <div class="wrap-img-card">
+                                <img src="./assets/images/portofolio/dashboard.svg" class="img" alt="img">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- End Dashboard section -->
+
+         <!-- kode component project                                                  -->
+         <section class="section2b" id="project">
             <img
                 src="./assets/images/squareLeft.png"
                 alt="dekorasi"
                 class="square"
             />
-            <h1 data-aos="fade-up">Present Products me</h1>
+            <h1 data-aos="fade-up">Projects me <img src="./assets/icons/project.png" class="projectIcon" alt="icon" /></h1>
+            <div class="wrapper-section2b">
+                <div class="wrap-section2b">
+                    <div class="card-section2b weblatter" data-aos="fade-up">
+                       <a href="https://omdb-api-vite.vercel.app/" target="__blank">
+                           <div class="kredensial2b">
+                                <small>Tampilkan website</small>
+                                <img
+                                    src="./assets/images/link.svg"
+                                    alt="icon-link"
+                                    />
+                                </div>
+                            </a>
+                        <h4>Lifedesign</h4>
+                        <p>
+                            The counseling agency's consultancy website was built with PHP and MySQL as the database.
+                        </p>
+                        <div class="kredensial2bb">
+                            <small>Tampilkan website</small>
+                            <img
+                                src="./assets/images/link.svg"
+                                alt="icon-link"
+                            />
+                        </div>
+                        <div class="wrap-detail">
+                            <div class="wrap-img-card">
+                            <img src="./assets/images/lifedesign.svg" class="img" alt="img">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card-section2b weblatter" data-aos="fade-up">
+                       <a href="https://www.abramrasa.com/" target="__blank">
+                           <div class="kredensial2b">
+                                <small>Tampilkan website</small>
+                                <img
+                                    src="./assets/images/link.svg"
+                                    alt="icon-link"
+                                    />
+                                </div>
+                            </a>
+                        <h4>Abramrasa</h4>
+                        <p>
+                            Website for catering services and wedding event preparation providers with various packages.
+                        </p>
+                        <div class="kredensial2bb">
+                            <small>Tampilkan website</small>
+                            <img
+                                src="./assets/images/link.svg"
+                                alt="icon-link"
+                            />
+                        </div>
+                        <div class="wrap-detail">
+                            <div class="wrap-img-card">
+                            <img src="./assets/images/portofolio/abramrasa.svg" class="img" alt="img">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card-section2b weblatter" data-aos="fade-up">
+                       <a href="https://khoirulhudaa.github.io/index.html" target="__blank">
+                           <div class="kredensial2b">
+                                <small>Tampilkan website</small>
+                                <img
+                                    src="./assets/images/link.svg"
+                                    alt="icon-link"
+                                    />
+                                </div>
+                            </a>
+                        <h4>Wonderfull-ID</h4>
+                        <p>
+                            Competition website with friends "Wonderful ID" between IKMI students and won 1st place
+                        </p>
+                        <div class="kredensial2bb">
+                            <small>Tampilkan website</small>
+                            <img
+                                src="./assets/images/link.svg"
+                                alt="icon-link"
+                            />
+                        </div>
+                        <div class="wrap-detail">
+                            <div class="wrap-img-card">
+                            <img src="./assets/images/portofolio/wonderfull.svg" class="img" alt="img">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card-section2b weblatter" data-aos="fade-up">
+                       <a href="https://askeba.id" target="__blank">
+                           <div class="kredensial2b">
+                            <small>Tampilkan website</small>
+                            <img
+                                src="./assets/images/link.svg"
+                                alt="icon-link"
+                                />
+                            </div>
+                        </a>
+                        <h4>Askeba Purawan Utama</h4>
+                        <p>
+                            CV's company profile website. Askeba Purwana Utama. Focuses on the export and import sector.
+                        </p>
+                        <div class="kredensial2bb">
+                            <small>Tampilkan website</small>
+                            <img
+                                src="./assets/images/link.svg"
+                                alt="icon-link"
+                            />
+                        </div>
+                        <div class="wrap-detail">
+                            <div class="wrap-img-card">
+                            <img src="./assets/images/portofolio/askeba.svg" class="img" alt="img">
+                        </div>
+                        </div>
+                    </div>
+                    <div class="card-section2b weblatter" data-aos="fade-up">
+                        <a href="https://birulima.vercel.app" target="__blank">
+                            <div class="kredensial2b">
+                             <small>Tampilkan website</small>
+                             <img
+                                 src="./assets/images/link.svg"
+                                 alt="icon-link"
+                                 />
+                             </div>
+                         </a>
+                        <h4>Birulima</h4>
+                        <p>
+                            a platform that makes it easy for anyone to build a
+                            simple website easily and quickly, they will also
+                            get the website code for free.
+                        </p>
+                        <div class="wrap-detail">
+                            <div class="wrap-img-card">
+                            <img src="./assets/images/portofolio/birulima.svg" class="img" alt="img">
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end kode component project -->                                               
+
+        <!-- Kode Product -->
+
+        <section class="section2b" id="product">
+            <img
+                src="./assets/images/squareLeft.png"
+                alt="dekorasi"
+                class="square"
+            />
+            <h1 data-aos="fade-up">Present Products <img src="./assets/icons/product.png" class="projectIcon" alt="icon" /></h1>
             <div class="wrapper-section2b">
                 <div class="wrap-section2b">
                     <div class="card-section2b weblatter" data-aos="fade-up">
@@ -274,7 +488,7 @@
                         </div>
                         <div class="wrap-detail">
                             <div class="wrap-img-card">
-                                <img src="./assets/images/tutor.svg" class="img" alt="img">
+                                <img src="./assets/images/portofolio/swiftvel.svg" class="img" alt="img">
                             </div>
                         </div>
                     </div>
@@ -369,206 +583,29 @@
                 </div>
             </div>
         </section>
-        <!-- end kode component section2 -->
 
-          <!-- kode component section5 -->
-          <section class="section5-sertif pdt">
-            <div class="wrap-section5-sertif">
-                <!-- <div class="certif-child certif-child2" data-aos="fade-up" data-aos-delay="100">
-                    <a
-                        href="https://class.buildwithangga.com/talent/huda777/build-modern-iosandroid-with-react-native"
-                        target="_blank"
-                    >
-                        <div class="kredensial">
-                            <small>Tampilkan kredensial</small>
-                            <img
-                                src="./assets/images/link.svg"
-                                alt="icon-link"
-                            />
-                        </div>
-                    </a>
-                    <h2>BWA - Slicing design with React native</h2>
-                    <p>
-                        Slicing design aplikasi mobile menggunakan react native
-                        bersama <b>Prawito hudoro</b>
-                    </p>
-                    <img
-                        src="./assets/images/bwa.png"
-                        alt="img-certificate"
-                        class="img-certif"
-                        aria-colspan="img2-child"
-                    />
-                </div> -->
-                <div class="certif-child certif-child1" data-aos="fade-up" data-aos-delay="200">
-                    <a
-                        href="https://drive.google.com/file/d/1_Z1qAub-htDCn941N2Bdf1PWvr7rJDnE/view?usp=sharing"
-                        target="_blank"
-                    >
-                        <div class="kredensial">
-                            <small>Tampilkan kredensial</small>
-                            <img
-                                src="./assets/images/link.svg"
-                                alt="icon-link"
-                            />
-                        </div>
-                    </a>
-                    <h2>BNSP - Junior Web Developer</h2>
-                    <p>
-                        Pelatihan uji kompetensi/sertifikasi keprofesian
-                        bertaraf nasional bersama <b>Digitalent - Kominfo</b>
-                    </p>
-                    <img
-                        src="./assets/images/bnsp.png"
-                        alt="img-certificate"
-                        class="img-certif"
-                        aria-colspan="img1-child"
-                    />
-                </div>
-                <div class="certif-child certif-child3" data-aos="fade-up" data-aos-delay="300">
-                    <a
-                        href="https://drive.google.com/file/d/1Yglg4WfK2BmNertOwOGQusy-lE4twatc/view?usp=sharing"
-                        target="_blank"
-                    >
-                        <div class="kredensial">
-                            <small>Tampilkan kredensial</small>
-                            <img
-                                src="./assets/images/link.svg"
-                                alt="icon-link"
-                            />
-                        </div>
-                    </a>
-                    <h2>WDC - Web design competition</h2>
-                    <p>
-                        Perlombaan slicing design yang di selenggarakan oleh
-                        <b>Politeknik Negeri Bali tingkat SMA/Sederajat (Nasional)</b>
-                    </p>
-                    <img
-                        src="./assets/images/wdc_pnb_2020.png"
-                        alt="img-certificate"
-                        class="img-certif"
-                        aria-colspan="img3-child"
-                    />
+        <!-- End Kode Product -->
+
+        <!-- Others designs -->
+
+        <div class="section6-mz1">
+            <div class="body-section6-mz1">
+                <p>Inpiration</p>
+                <h1>UI Design Exploration</h1>
+                <div class="sub-body-mz1">
+                    <p>Determine your own web appearance according to your needs and tastes.</p>
+                    <button>View our project</button>
                 </div>
             </div>
-        </section>
-        <!-- end kode component section5 -->
-
-        <!-- kode component section2                                                    -->
-        <section class="section2b" id="projek">
-            <img
-                src="./assets/images/squareLeft.png"
-                alt="dekorasi"
-                class="square"
-            />
-            <h1 data-aos="fade-up">Project me</h1>
-            <div class="wrapper-section2b">
-                <div class="wrap-section2b">
-                    <div class="card-section2b weblatter" data-aos="fade-up">
-                       <a href="https://omdb-api-vite.vercel.app/" target="__blank">
-                           <div class="kredensial2b">
-                                <small>Tampilkan website</small>
-                                <img
-                                    src="./assets/images/link.svg"
-                                    alt="icon-link"
-                                    />
-                                </div>
-                            </a>
-                        <h4>Lifedesign</h4>
-                        <p>
-                            a platform that makes it easy for anyone to build a
-                            simple website easily and quickly, they will also
-                            get the website code for free.
-                        </p>
-                        <div class="kredensial2bb">
-                            <small>Tampilkan website</small>
-                            <img
-                                src="./assets/images/link.svg"
-                                alt="icon-link"
-                            />
-                        </div>
-                        <div class="wrap-detail">
-                            <div class="wrap-img-card">
-                            <img src="./assets/images/lifedesign.svg" class="img" alt="img">
-                        </div>
-                        </div>
-                    </div>
-                </div>
+            <div class="image-all">
+                <img src="./assets/images/portofolio/all.svg" alt="image project">
             </div>
-        </section>
-        <!-- end kode component section2 -->
+        </div>
 
-        <!-- kode komponent section 8 -->
-        <!-- <section class="section8">
-            <button class="btn-downloads">PORTOFOLIO</button>
-            <h2 data-aos="fade-up">Css framework based on utilties and components</h2>
-            <p data-aos="fade-up">
-                The idea of ​​creating a framework started with curiosity about
-                tailwindcss. I have a target to remove long css code from my
-                project code.
-            </p>
-            <a
-                href="https://valclassui-v1.vercel.app/index.html"
-                target="__blank"
-            >
-                <div class="done-v">
-                    <img src="./assets/images/arrow-right.png" alt="arrow" />
-                </div>
-            </a>
-
-            <section class="portofolio" id="porto">
-                <div class="wrap-portofolio">
-                    <div class="co-wrap-portofolio" data-aos="fade-up">
-                        <!-- <img src="./assets/images/custom.svg" alt="valclass-logo bt ahmad zaiturofiq" /> -->
-                        <!-- <img
-                            src="./assets/images/maker.svg"
-                            alt="valclass-logo bt ahmad zaiturofiq"
-                            class="vv vv1"
-                        />
-                        <img
-                            src="./assets/images/fitur.svg"
-                            alt="valclass-logo bt ahmad zaiturofiq"
-                            class="vv vv2"
-                        />
-                        <img
-                            src="./assets/images/utils.svg"
-                            alt="valclass-logo bt ahmad zaiturofiq"
-                            class="vv vv3"
-                        /> -->
-                        <!-- <a target="__blank" href="https://valclass-css.com">
-                    <div class="card-portofolio">
-                        <div class="title1">Framework css</div>
-                        <i class="fas fa-arrow-right"></i>
-                        <img src="./assets/images/Group 2.svg" alt="img-portofolio">
-                    </div>
-                    </a>
-                    <a target="__blank" href="https://wisata-portof.vercel.app/">
-                    <div class="card-portofolio">
-                        <div class="title2">Website wisata</div>
-                        <i class="fas fa-arrow-right"></i>
-                        <img src="./assets/images/Group 5.svg" alt="img-portofolio">
-                    </div>
-                    </a>
-                    <a target="__blank" href="https://stayathome-portof.vercel.app/">
-                    <div class="card-portofolio">
-                        <div class="title3">StayAtHome</div>
-                        <i class="fas fa-arrow-right"></i>
-                        <img src="./assets/images/Group 6.svg" alt="img-portofolio">
-                    </div>
-                    </a>
-                    <a target="__blank" href="https://ewasterj.com">
-                    <div class="card-portofolio">
-                        <div class="title4">EwasteRJ</div>
-                        <i class="fas fa-arrow-right"></i>
-                        <img src="./assets/images/Group 1.svg" alt="img-portofolio">
-                    </div>
-                    </a> -->
-                    </div>
-                </div>
-            </section>
-        </section> -->
-        <!-- End kode komponent section 8 -->
+        <!-- End Others designs -->
 
         <!-- kode komponent footer -->
+
         <div></div>
         <footer>
             <div class="wrap-footer">
@@ -584,7 +621,81 @@
         </footer>
         <!-- End kode komponent footer -->
 
+
+        <a href="https://wa.me/6289513093406" target="_blank">
+            <div class="wa-feature">
+                <img loading="lazy" src="./assets/images/wa.png" alt="wa" />
+            </div>
+        </a>   
+
+        <div class="modal-brosur" id="modalBrosur">
+            <div class="wrapper-brosur">
+                <div class="modal-brosur-close" id="modalBrosurClose">
+                    <i class="fas fa-times"></i>
+                </div>
+                <img src="./assets/images/irul.png" class="animate__animated animate__tada" alt="BuatWebSendiri">
+            </div>
+        </div>
+
+        <script src="./modal.js"></script>
+        <script src="./navbar.js"></script>
         <!-- Kode js -->
+        <script>
+            // Temukan elemen gambar dengan ID "logo"
+            const logoImage = document.getElementById('logo');
+
+            // Tambahkan event listener untuk mengarahkan ke halaman lain saat gambar diklik
+            logoImage.addEventListener('click', function() {
+                // Mengarahkan ke halaman index.html
+                window.location.href = './index.html';
+            });
+
+            const titleElement = document.querySelector(".title-hero-bmw");
+            const textElement = document.getElementById("text-animation");
+            const textArray = [
+                "Support",
+                "Security",
+                "Solution",
+            ];
+            let textIndex = 0;
+
+            function animateText() {
+                textElement.textContent = "";
+                let text = textArray[textIndex];
+                let charIndex = 0;
+
+                function typeChar() {
+                    if (charIndex < text.length) {
+                        textElement.textContent += text.charAt(charIndex);
+                        charIndex++;
+                        setTimeout(typeChar, 100); // Waktu penundaan antara setiap karakter (ms)
+                    } else {
+                        setTimeout(eraseText, 2000); // Tahan teks selama 2 detik sebelum menghapusnya
+                    }
+                }
+
+                function eraseText() {
+                    if (textElement.textContent.length > 0) {
+                        textElement.textContent = textElement.textContent.slice(
+                            0,
+                            -1
+                        );
+                        setTimeout(eraseText, 50); // Waktu penundaan antara penghapusan karakter (ms)
+                    } else {
+                        // Ganti indeks teks ke teks berikutnya dalam array
+                        textIndex = (textIndex + 1) % textArray.length;
+                        setTimeout(animateText, 1000); // Tahan selama 1 detik sebelum animasi berikutnya
+                    }
+                }
+
+                typeChar();
+            }
+
+            window.addEventListener("DOMContentLoaded", () => {
+                // Mulai animasi pergantian teks ketika DOM telah dimuat
+                animateText();
+            });
+        </script>
         <script src="./aos.js"></script>
         <script>
             AOS.init();
